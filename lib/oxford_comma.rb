@@ -9,9 +9,9 @@ def oxford_comma(array)
   end
   for word in array
     if word == array.last
-      phrase += " and #{word}"
+      phrase += "and #{word}"
     else
-      phrase += "#{word},"
+      phrase += "#{word}, "
     end
   end
   return phrase
