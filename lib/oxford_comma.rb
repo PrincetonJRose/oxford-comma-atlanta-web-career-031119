@@ -4,7 +4,7 @@ def oxford_comma(array)
     phrase += array[0]
     return phrase
   elsif array.size == 2
-    phrase += "#{word} and #{word}"
+    phrase += "#{array[0]} and #{array[1]}"
     return phrase
   end
   for word in array
