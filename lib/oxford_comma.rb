@@ -1,10 +1,10 @@
 def oxford_comma(array)
   phrase = ''
   for word in array
-    if word == array.last
-      phrase += " and #{word}"
+    if word == array.last and array.size > 1
+      phrase += ", and #{word}"
     else
-    phrase += ", #{word}"
+      phrase += ", #{word}"
     end
   end
   puts phrase
